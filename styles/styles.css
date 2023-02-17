@@ -35,6 +35,9 @@ body{
 input, button{
     font-size: 2.4rem;
 }
+button{
+    cursor: pointer;
+}
 
 input{
     padding: 0.5rem 1.5rem;
@@ -58,7 +61,7 @@ main{
     display: flex;
     flex-direction: column;
 
-    height: 79rem;
+    height: fit-content;
     max-width: 37.5rem;
     padding: 3rem;
 
@@ -99,6 +102,9 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+.inputs__tip_text{
+    color: var(--dark-grayish-cyan);
+}
 .inputs__buttons_container{
     display: grid;
     grid-template-rows: auto;
@@ -123,6 +129,16 @@ main{
 .inputs__buttons_container div{
     display: flex;
 }
+.inputs__people_labels{
+    display: flex;
+    justify-content: space-between;
+}
+.people_labels__error{
+    color: rgb(255, 114, 96);
+}
+/* #people-input{
+    border: solid 0.2rem rgb(255, 114, 96);
+} */
 .inputs__icon_person{
     position: absolute;
     left: 2rem;
@@ -173,4 +189,138 @@ main{
     border: none;
     border-radius: 0.5rem;
     color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        align-items: center;
+    
+        padding-block-start: 8.4rem;
+    }
+
+    button{
+        height: 5rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 5rem;
+
+        padding: 4rem;
+        height: 48rem;
+        max-width: unset;
+        width: 92.5rem;
+    }
+    .main__title{
+        top: -15rem;
+    }
+    .main__inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 0.5rem;
+    }
+    .inputs__input_container{
+        position: relative;
+    
+        margin-block-start: 0.8rem;
+        margin-block-end: unset;
+    }
+    
+    .inputs__buttons_container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    
+        margin-block-start: 1.5rem;
+        margin-block-end: unset;
+    }
+    .inputs__buttons_container button{
+        height: 4.6rem;
+    
+        color: white;
+        background-color: var(--very-dark-cyan);
+        border-radius: 0.5rem;
+        border: none;
+    }
+    .inputs__buttons_container .button--active{
+        background-color: var(--strong-cyan);
+        color: var(--very-dark-cyan);
+    }
+    .inputs__buttons_container div{
+        display: flex;
+    }
+    .inputs__people_labels{
+        display: flex;
+        justify-content: space-between;
+    }
+    .people_labels__error{
+        color: rgb(255, 114, 96);
+    }
+    /* #people-input{
+        border: solid 0.2rem rgb(255, 114, 96);
+    } */
+    .inputs__icon_person{
+        position: absolute;
+        left: 2rem;
+    
+        width: 1.5rem;
+        height: 4.6rem;
+    
+        background-image: url('../images/icon-person.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main__results{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        height: 26rem;
+        padding: 2rem;
+        padding-block-start: 3rem;
+    
+        border-radius: 1.5rem;
+        background-color: var(--very-dark-cyan);
+    }
+    .results__result_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    
+        color: white;
+    }
+    
+    .results__result_container div p:nth-child(2){
+        color: var(--grayish-cyan);
+    }
+    
+    .results__result_container span{
+        font-size: 2.8rem;
+    
+        color: var(--strong-cyan);
+    }
+    
+    .main__results button{
+        height: 5rem;
+    
+        font-size: 2.2rem;
+    
+        background-color: var(--strong-cyan);
+        border: none;
+        border-radius: 0.5rem;
+        color: var(--very-dark-cyan);
+    }
+    
+}
+
+@media (hover:hover){
+    button:hover{
+        color: var(--very-dark-cyan) !important;
+        background-color: var(--light-grayish-cyan) !important;
+    }
 }

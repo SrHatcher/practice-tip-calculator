@@ -16,28 +16,37 @@
   <main>
     <h1 class="main__title">SPLI<br>TTER</h1>
     <div class="main__inputs">
-      <label for="bill-input">Bill</label>
-      <div class="inputs__input_container">
-        <span class="inputs__icon_dollar"></span>
-        <input type="text" id="bill-input" value="142.55">
-      </div>
-
-      <span>Select Tip %</span>
-      <div class="inputs__buttons_container">
-        <button>5%</button>
-        <button>10%</button>
-        <button class="button--active">15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <div>
-          <input type="text" placeholder="Custom" id="custom-input">
+      <div>
+        <label for="bill-input">Bill</label>
+        <div class="inputs__input_container">
+          <span class="inputs__icon_dollar"></span>
+          <input type="text" id="bill-input" value="142.55">
         </div>
       </div>
 
-      <label for="people-input">Number of People</label>
-      <div class="inputs__input_container">
-        <span class="inputs__icon_person"></span>
-        <input type="text" id="people-input" value="5">
+      <div>
+        <span class="inputs__tip_text">Select Tip %</span>
+        <div class="inputs__buttons_container">
+          <button>5%</button>
+          <button>10%</button>
+          <button class="button--active">15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <div>
+            <input type="text" placeholder="Custom" id="custom-input">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="inputs__people_labels">
+          <label for="people-input">Number of People</label>
+          <span class="people_labels__error">Can't be zero</span>
+        </div>
+        <div class="inputs__input_container">
+          <span class="inputs__icon_person"></span>
+          <input type="text" id="people-input" value="5">
+        </div>
       </div>
     </div>
 
