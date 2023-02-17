@@ -162,6 +162,13 @@ main{
     border-radius: 1.5rem;
     background-color: var(--very-dark-cyan);
 }
+.main__results > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 12rem;
+}
 .results__result_container{
     display: flex;
     justify-content: space-between;
@@ -196,10 +203,6 @@ main{
         align-items: center;
     
         padding-block-start: 8.4rem;
-    }
-
-    button{
-        height: 5rem;
     }
 
     main{
@@ -240,52 +243,30 @@ main{
         margin-block-end: unset;
     }
     .inputs__buttons_container button{
-        height: 4.6rem;
-    
-        color: white;
-        background-color: var(--very-dark-cyan);
-        border-radius: 0.5rem;
-        border: none;
-    }
-    .inputs__buttons_container .button--active{
-        background-color: var(--strong-cyan);
-        color: var(--very-dark-cyan);
-    }
-    .inputs__buttons_container div{
-        display: flex;
-    }
-    .inputs__people_labels{
-        display: flex;
-        justify-content: space-between;
+        height: 4.8rem;
     }
     .people_labels__error{
+        display: none;
         color: rgb(255, 114, 96);
-    }
-    /* #people-input{
-        border: solid 0.2rem rgb(255, 114, 96);
-    } */
-    .inputs__icon_person{
-        position: absolute;
-        left: 2rem;
-    
-        width: 1.5rem;
-        height: 4.6rem;
-    
-        background-image: url('../images/icon-person.svg');
-        background-position: center;
-        background-repeat: no-repeat;
     }
     .main__results{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     
-        height: 26rem;
-        padding: 2rem;
+        height: 100%;
+        padding: 4rem;
         padding-block-start: 3rem;
     
         border-radius: 1.5rem;
         background-color: var(--very-dark-cyan);
+    }
+    .main__results > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        height: 16rem;
     }
     .results__result_container{
         display: flex;
@@ -294,13 +275,19 @@ main{
     
         color: white;
     }
-    
+    .results__result_container >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 100%;
+    }
     .results__result_container div p:nth-child(2){
         color: var(--grayish-cyan);
     }
     
     .results__result_container span{
-        font-size: 2.8rem;
+        font-size: 4.5rem;
     
         color: var(--strong-cyan);
     }
