@@ -4,11 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!--Modern CSS reset-->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <!--My styles-->
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+  
+  <main>
+    <h1 class="main__title">SPLI<br>TTER</h1>
+    <div class="main__inputs">
+      <label for="bill-input">Bill</label>
+      <div class="inputs__input_container">
+        <span class="inputs__icon_dollar"></span>
+        <input type="text" id="bill-input" value="142.55">
+      </div>
 
+      <span>Select Tip %</span>
+      <div class="inputs__buttons_container">
+        <button>5%</button>
+        <button>10%</button>
+        <button class="button--active">15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <div>
+          <input type="text" placeholder="Custom" id="custom-input">
+        </div>
+      </div>
+
+      <label for="people-input">Number of People</label>
+      <div class="inputs__input_container">
+        <span class="inputs__icon_person"></span>
+        <input type="text" id="people-input" value="5">
+      </div>
+    </div>
+
+    <div class="main__results">
+      <div class="results__result_container">
+        <div>
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <span id="tip-amount">$4.27</span>
+      </div>
+      
+      <div class="results__result_container">
+        <div>
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <span id="total">$32.79</span>
+      </div>
+
+      <button>RESET</button>
+    </div>
+  </main>
 </body>
 </html>
