@@ -63,6 +63,8 @@ function activateButton(e=undefined){
         activeButton ? activeButton.classList.remove('button--active') : null;
     }
 
+    const resetButton = document.getElementById('reset-button');
+    resetButton.disabled = false
     calculateTip();
 }
 
@@ -93,4 +95,6 @@ resetButton.addEventListener('click', ()=>{
     errorSpan.style.display = 'none'
     activeButton ? activeButton.classList.toggle('button--active', false) : undefined;
 
+    const resetButton = document.getElementById('reset-button');
+    resetButton.disabled = true
 })
