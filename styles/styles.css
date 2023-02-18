@@ -134,6 +134,7 @@ main{
     justify-content: space-between;
 }
 .people_labels__error{
+    display: none;
     color: rgb(255, 114, 96);
 }
 /* #people-input{
@@ -244,10 +245,6 @@ main{
     }
     .inputs__buttons_container button{
         height: 4.8rem;
-    }
-    .people_labels__error{
-        display: none;
-        color: rgb(255, 114, 96);
     }
     .main__results{
         display: flex;
